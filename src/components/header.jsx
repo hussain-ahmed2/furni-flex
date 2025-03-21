@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 export default function Header() {
 	const pathname = usePathname();
 	return (
-		<header className="border-b border-gray-100">
+		<header className="border-b border-gray-200">
 			<nav className="max-w-7xl mx-auto px-5 min-h-20 flex justify-between items-center">
 				<Link href="/" className="flex items-center gap-1.5">
 					<svg
@@ -30,41 +30,41 @@ export default function Header() {
 
 				<div className="flex gap-2.5 font-medium">
 					<Link
-						href="#"
-						className={`px-5 py-2 rounded-md ${
-							pathname === "/" ? "bg-gray-100" : ""
+						href="/"
+						className={`px-5 py-2 rounded-md hover:underline ${
+							pathname === "/" ? "bg-gray-200" : ""
 						}`}
 					>
 						Home
 					</Link>
 					<Link
-						href="#"
-						className={`px-5 py-2 rounded-md ${
-							pathname === "/products" ? "bg-gray-100" : ""
+						href="/products"
+						className={`px-5 py-2 rounded-md hover:underline ${
+							pathname === "/products" ? "bg-gray-200" : ""
 						}`}
 					>
 						Products
 					</Link>
 					<Link
 						href="#"
-						className={`px-5 py-2 rounded-md ${
-							pathname === "/categories" ? "bg-gray-100" : ""
+						className={`px-5 py-2 rounded-md hover:underline ${
+							pathname === "/categories" ? "bg-gray-200" : ""
 						}`}
 					>
 						Categories
 					</Link>
 					<Link
 						href="#"
-						className={`px-5 py-2 rounded-md ${
-							pathname === "/custom" ? "bg-gray-100" : ""
+						className={`px-5 py-2 rounded-md hover:underline ${
+							pathname === "/custom" ? "bg-gray-200" : ""
 						}`}
 					>
 						Custom
 					</Link>
 					<Link
 						href="#"
-						className={`px-5 py-2 rounded-md ${
-							pathname === "/blog" ? "bg-gray-100" : ""
+						className={`px-5 py-2 rounded-md hover:underline ${
+							pathname === "/blog" ? "bg-gray-200" : ""
 						}`}
 					>
 						Blog
