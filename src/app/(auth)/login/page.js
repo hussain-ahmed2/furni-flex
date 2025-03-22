@@ -2,6 +2,7 @@
 
 import InputField from "@/components/input-field";
 import { Eye, EyeOff } from "lucide-react";
+import { redirect } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -15,6 +16,7 @@ export default function Login() {
 
 	function handleSubmit(event) {
 		event.preventDefault();
+		redirect('/');
 	}
 
 	return (
