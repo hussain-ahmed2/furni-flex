@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 
 export default function Header() {
 	const pathname = usePathname();
+
 	return (
 		<header className="border-b border-gray-200">
 			<nav className="max-w-7xl mx-auto px-5 min-h-20 flex justify-between items-center">
@@ -31,40 +32,40 @@ export default function Header() {
 				<div className="flex gap-2.5 font-medium">
 					<Link
 						href="/"
-						className={`px-5 py-2 rounded-md hover:underline ${
-							pathname === "/" ? "bg-gray-200" : ""
+						className={`px-5 py-2 rounded-md hover:underline tc hover:text-cyan-500 ${
+							pathname === "/" ? "bg-gray-100" : ""
 						}`}
 					>
 						Home
 					</Link>
 					<Link
 						href="/products"
-						className={`px-5 py-2 rounded-md hover:underline ${
-							pathname === "/products" ? "bg-gray-200" : ""
+						className={`px-5 py-2 rounded-md hover:underline tc hover:text-cyan-500 ${
+							pathname === "/products" ? "bg-gray-100" : ""
 						}`}
 					>
 						Products
 					</Link>
 					<Link
 						href="#"
-						className={`px-5 py-2 rounded-md hover:underline ${
-							pathname === "/categories" ? "bg-gray-200" : ""
+						className={`px-5 py-2 rounded-md hover:underline tc hover:text-cyan-500 ${
+							pathname === "/categories" ? "bg-gray-100" : ""
 						}`}
 					>
 						Categories
 					</Link>
 					<Link
 						href="#"
-						className={`px-5 py-2 rounded-md hover:underline ${
-							pathname === "/custom" ? "bg-gray-200" : ""
+						className={`px-5 py-2 rounded-md hover:underline tc hover:text-cyan-500 ${
+							pathname === "/custom" ? "bg-gray-100" : ""
 						}`}
 					>
 						Custom
 					</Link>
 					<Link
 						href="#"
-						className={`px-5 py-2 rounded-md hover:underline ${
-							pathname === "/blog" ? "bg-gray-200" : ""
+						className={`px-5 py-2 rounded-md hover:underline tc hover:text-cyan-500 ${
+							pathname === "/blog" ? "bg-gray-100" : ""
 						}`}
 					>
 						Blog
