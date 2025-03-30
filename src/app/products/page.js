@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Pagination from "@/components/products/pagination";
 import ProductGrid from "@/components/products/product-grid";
@@ -21,6 +22,7 @@ export default function Products() {
 					<Pagination />
 				</div>
 			</main>
+			<Footer />
 		</>
 	);
 }
